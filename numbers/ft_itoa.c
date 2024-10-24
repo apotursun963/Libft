@@ -10,11 +10,11 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 static	int	ft_len(int num)
 {
-	int		counter;
+	int	counter;
 
 	if (num == 0)
 		return (1);
