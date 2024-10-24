@@ -6,7 +6,7 @@
 /*   By: atursun <atursun@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 10:10:03 by atursun           #+#    #+#             */
-/*   Updated: 2024/10/18 12:21:56 by atursun          ###   ########.fr       */
+/*   Updated: 2024/10/24 10:52:26 by atursun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	len_sub = ft_strlen(s + start);
 	if (len_sub < len)
 		len = len_sub;
-	sub = (char *)malloc(len +1);
-	if (!sub)
+	if (!(sub = (char *)malloc(len +1)))
 		return (NULL);
 	count = -1;
 	while (++count < len)

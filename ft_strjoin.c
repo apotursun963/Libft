@@ -6,7 +6,7 @@
 /*   By: atursun <atursun@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/09 10:50:21 by atursun           #+#    #+#             */
-/*   Updated: 2024/10/18 11:45:01 by atursun          ###   ########.fr       */
+/*   Updated: 2024/10/24 10:51:34 by atursun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,8 +23,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 		return (ft_strdup(s2));
 	if (!s2)
 		return (ft_strdup(s1));
-	assemble = (char *)malloc((ft_strlen(s1) + ft_strlen(s2)) + 1);
-	if (!assemble)
+	if (!(assemble = (char *)malloc((ft_strlen(s1) + ft_strlen(s2)) + 1)))
 		return (NULL);
 	index = -1;
 	while (++index < (ft_strlen(s1) + ft_strlen(s2)))

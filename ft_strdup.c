@@ -6,7 +6,7 @@
 /*   By: atursun <atursun@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/08 17:13:12 by atursun           #+#    #+#             */
-/*   Updated: 2024/10/18 10:20:15 by atursun          ###   ########.fr       */
+/*   Updated: 2024/10/24 10:51:11 by atursun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,8 +19,7 @@ char	*ft_strdup(const char *src)
 	int		index;
 
 	size = ft_strlen(src);
-	str = (char *)malloc(size + 1);
-	if (!str)
+	if (!(str = (char *)malloc(size + 1)))
 		return (NULL);
 	index = -1;
 	while (++index < size)

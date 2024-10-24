@@ -6,7 +6,7 @@
 /*   By: atursun <atursun@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/18 10:17:41 by atursun           #+#    #+#             */
-/*   Updated: 2024/10/21 10:06:53 by atursun          ###   ########.fr       */
+/*   Updated: 2024/10/24 10:50:23 by atursun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n)
 	if (!dest && !source)
 		return (0);
 	while (n--)
-		*dest++ = *source++;
+		*(dest++) = *(source++);
 	return (dst);
 }

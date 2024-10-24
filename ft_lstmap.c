@@ -6,7 +6,7 @@
 /*   By: atursun <atursun@student.42istanbul.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/14 12:23:31 by atursun           #+#    #+#             */
-/*   Updated: 2024/10/18 12:31:32 by atursun          ###   ########.fr       */
+/*   Updated: 2024/10/24 10:48:14 by atursun          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,8 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	while (lst)
 	{
 		content = f(lst->content);
-		new_unit = ft_lstnew(content);
-		if (!new_unit)
-		{
-			ft_lstclear(&new_lst, del);
-			del(content);
-			return (NULL);
-		}
+		if (!(new_unit = ft_lstnew(content)))
+			return (ft_lstclear(&new_lst, del), del(content), NULL);
 		ft_lstadd_back(&new_lst, new_unit);
 		lst = lst->next;
 	}
