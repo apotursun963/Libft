@@ -2,3 +2,5 @@ The Libft project is the first assignment at 42 School, where you will recode st
 
 
 <img width="1041" alt="Ekran Resmi 2024-10-24 ÖS 12 02 17" src="https://github.com/user-attachments/assets/0e1cf32f-dd47-41ef-9416-5330bce2c533">
+
+<img width="699" alt="Ekran Resmi 2024-10-24 ÖS 12 06 46" src="https://github.com/user-attachments/assets/aeff1721-be28-4d32-b6ea-4349be9859e1">
