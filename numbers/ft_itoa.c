@@ -59,13 +59,12 @@ static	char	*ft_convert_to_string(int n, char *str, int len)
 char	*ft_itoa(int number)
 {
 	char	*str;
-	int		len;
+	int	len;
 
 	if (number == -2147483648)
 		return (ft_strdup("-2147483648"));
 	len = ft_len(number);
-	str = (char *)malloc(len +1);
-	if (!str)
+	if (!(str = (char *)malloc(len +1))
 		return (NULL);
 	return (ft_convert_to_string(number, str, len));
 }
