@@ -16,7 +16,6 @@
 # include <stdlib.h>			
 # include <unistd.h>
 
-// Characters func
 int	ft_isalpha(int a);
 int	ft_isdigit(int a);
 int	ft_isalnum(int a);
@@ -25,11 +24,9 @@ int	ft_isprint(int a);
 int	ft_toupper(int a);
 int	ft_tolower(int a);
 
-// Numbers func
 char	*ft_itoa(int number);
 int	ft_atoi(const char *str);
 
-// String func
 size_t	ft_strlen(const char *str);
 char	**ft_split(char const *str, char c);
 char	*ft_strchr(const char *str, int chr);
@@ -44,13 +41,11 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int	ft_strncmp(const char *str1, const char *str2, size_t size);
 char	*ft_strnstr(const char *str, const char *substr, size_t len);
 
-// File Descriptor func
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *str, int fd);
 void	ft_putendl_fd(char *str, int fd);
 void	ft_putnbr_fd(int number, int fd);
 
-// Memory func
 char	*ft_strdup(const char *src);
 void	ft_bzero(void *str, size_t len);
 void	*ft_memset(void *str, int chr, size_t len);
@@ -60,7 +55,6 @@ void	*ft_memcpy(void *dst, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *source, size_t n);
 int	ft_memcmp(const void *str1, const void *str2, size_t n);
 
-// Linked List func
 typedef struct s_list
 {
 	void		*content;
