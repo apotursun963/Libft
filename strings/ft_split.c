@@ -81,7 +81,7 @@ char	**ft_split(char const *str, char c)
 {
 	char	**arr;
 
-	if (!(str) || !(arr = (char **)malloc((ft_len_of_word(str, c) + 1) * sizeof(char *)))
+	if (!(str) || !(arr = (char **)malloc((ft_len_of_word(str, c) + 1) * sizeof(char *))))
 		return (NULL);
 	arr = ft_split_string(arr, str, c);
 	return (arr);
